@@ -1,0 +1,41 @@
+{
+"transaction":{
+"reference":"/home/charuj/Repos/bcpd/data/demo-db/vehicleDb/reference/Skoda_Octavia.03/",
+"ref_trans_id": "Skoda_Octavia.03_1_subtype_1_1",
+"target":"/home/charuj/Repos/bcpd/data/demo-db/vehicleDb/target/UP16AV9955/",
+"target_trans_id": "P02C021-2022053000207",
+},
+"parameters":{
+"image_size":(1000, 1600, 3),
+"DB":50000,
+"voxel_size":0.08,
+"K":100,
+"J": 100,
+"geodesic":0.8,
+"neighbours":100,
+"distance":0.02,
+"d":50,
+"e":0.20,
+"f":0.20,
+"l":100,
+"b":5,
+"z":0.001,
+"c":1e-4,
+"g":0.1}
+},
+"Before_avg" :  6.159688220598402,
+"After_avg" :  7.359644843982229,
+"bounding_boxes" :  28,
+"FPSA_algorithm":  94.919,
+"Downsampling":0.409,
+"VB Optimization": 75.921,
+"Interpolation": 1.207,
+"File_reading":    2.940,
+"File writing":    7.975,
+"loops":	33,
+"sigma":	0.064637,
+"N_hat":	49038.000000
+
+}
+
+
