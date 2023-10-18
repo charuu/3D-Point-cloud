@@ -1,0 +1,5 @@
+    Downsampling:    0.775 s (real) / 0.775 s (cpu)
+    VB Optimization: 112.393 s (real) / 1541.618 s (cpu)
+    Interpolation:   0.642 s (real) / 7.333 s (cpu)
+    File reading:    2.661 s
+    File writing:    3.358 s

@@ -1,0 +1,15 @@
+
+project(flann_bcpd)
+cmake_minimum_required(VERSION 3.22)
+add_executable(flann_example_c flann_example_c.c)
+add_library(flann ${CMAKE_CURRENT_SOURCE_DIR}/externel/flann/src/cpp/flann/flann.cpp ${CMAKE_CURRENT_SOURCE_DIR}/externel/flann/src/cpp/flann/general.h )
+target_include_directories(flann PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/externel/flann/src/cpp/>
+$<INSTALL_INTERFACE:include/flann)  # <prefix>/include/mylib)
+
+target_link_libraries(flann_example_c flann)
+set_target_properties(flann_example_c PROPERTIES COMPILE_FLAGS -std=c99)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(LZ4 REQUIRED liblz4)
+target_link_libraries(flann liblz4.a)
+add_dependencies( flann_example_c flann)
+install (TARGETS flann_example_c DESTINATION bin )

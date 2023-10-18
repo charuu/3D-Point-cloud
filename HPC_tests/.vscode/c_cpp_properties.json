@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/magma/include",
+                "${workspaceFolder}/GPU/KDTree/FLANN_BCPD/externel/flann/src/cpp/flann/algorithms",
+                "${workspaceFolder}/GPU/KDTree/FLANN_BCPD/externel/flann/src/cpp"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/local/bin/gcc",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "${workspaceFolder}/jhuber6-cgo2022-artifacts-38c3765/llvm-project/clang/bindings/python/tests/cindex/INPUTS/compile_commands.json",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

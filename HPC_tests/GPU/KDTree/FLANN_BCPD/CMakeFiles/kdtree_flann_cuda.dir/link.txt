@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/kdtree_flann_cuda.dir/src/kdtree_flann_cuda.c.o -o kdtree_flann_cuda  -lflann -Wl,-Bstatic -llz4 -Wl,-Bdynamic 
